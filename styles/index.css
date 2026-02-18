@@ -11,10 +11,41 @@
   --purple-50: #EDE4FF;
   --purple-300: #A775F1;
   --purple-500: #733FC8;
+  --background-white: #F6F5F6;
 }
 
 body {
   padding: 4.625em 2.25em;
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+  background: var(--background-white);
+}
+
+.testi-card {
+  border-radius: 8px;
+  padding: 2em;
+  background: var(--white);
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+
+  &.-purple {
+    background: var(--purple-500);
+    color: var(--white);
+
+    /* todo: applies for the "verified graduate" and last paragraph */
+    /* color: var(--purple-50); */
+
+    >.headshot {
+      border-color: var(--purple-300);
+    }
+  }
+
+  >.headshot {
+    width: 28px;
+    height: 28px;
+    border-radius: 99px;
+    border: 2px solid var(--purple-300);
+  }
 }
 
 /* semibold */
