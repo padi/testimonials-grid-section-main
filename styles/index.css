@@ -12,14 +12,46 @@
   --purple-300: #A775F1;
   --purple-500: #733FC8;
   --background-white: #F6F5F6;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   padding: 4.625em 2.25em;
+  background: var(--background-white);
+}
+
+.testi-list {
   display: flex;
   flex-flow: column;
   gap: 2em;
-  background: var(--background-white);
+}
+
+/* Change colors only */
+.testi-card.-purple {
+  background: var(--purple-500);
+
+  .headshot {
+    border-color: var(--purple-300);
+    border: 2px solid var(--purple-300);
+  }
+
+  .fullname,
+  .result {
+    color: var(--white);
+  }
+
+  .verification,
+  .beforequote {
+    color: var(--purple-50);
+  }
 }
 
 .testi-card {
@@ -28,31 +60,46 @@ body {
   background: var(--white);
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 
-  &.-purple {
-    background: var(--purple-500);
-    color: var(--white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
 
-    /* todo: applies for the "verified graduate" and last paragraph */
-    /* color: var(--purple-50); */
-
-    >.headshot {
-      border-color: var(--purple-300);
-    }
-  }
-
-  >.headshot {
+  .headshot {
     width: 28px;
     height: 28px;
     border-radius: 99px;
-    border: 2px solid var(--purple-300);
+    border: 0px;
+  }
+
+  .avatar-box {
+    display: flex;
+    flex-flow: row;
+    gap: 1em;
+  }
+
+  .person-box {
+    display: flex;
+    flex-flow: column;
+
+    >.fullname {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 110%;
+      letter-spacing: 0;
+    }
+
+    >.verification {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 110%;
+      letter-spacing: 0;
+    }
   }
 }
 
 /* semibold */
 .text-preset-1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  font-style: normal;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0;
@@ -62,9 +109,7 @@ body {
 
 /* medium */
 .text-preset-2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 13;
   line-height: 110%;
   letter-spacing: 0;
@@ -74,9 +119,7 @@ body {
 
 /* medium */
 .text-preset-3 {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 13;
   line-height: 140%;
   letter-spacing: 0;
@@ -86,9 +129,7 @@ body {
 
 /* medium */
 .text-preset-4 {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 11;
   line-height: 110%;
   letter-spacing: 0;
