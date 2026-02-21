@@ -35,25 +35,6 @@ body {
   letter-spacing: 0;
 }
 
-.testi-card.-purple {
-  background: var(--purple-500);
-
-  .headshot {
-    border-color: var(--purple-300);
-    border: 2px solid var(--purple-300);
-  }
-
-  .fullname,
-  .result {
-    color: var(--white);
-  }
-
-  .verification,
-  .beforequote {
-    color: var(--purple-50);
-  }
-}
-
 .testi-card {
   border-radius: 8px;
   padding: 2em;
@@ -104,5 +85,63 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 140%;
+  }
+}
+
+.testi-card.-purple {
+  background: var(--purple-500);
+
+  .headshot {
+    border-color: var(--purple-300);
+    border: 2px solid var(--purple-300);
+  }
+
+  .fullname,
+  .result {
+    color: var(--white);
+  }
+
+  .verification,
+  .beforequote {
+    color: var(--purple-50);
+  }
+}
+
+.testi-card.-grey {
+  background: var(--grey-500);
+
+  .headshot {
+    border: 0px;
+  }
+
+  .fullname,
+  .result {
+    color: var(--white);
+  }
+
+  .verification,
+  .beforequote {
+    color: var(--grey-100);
+  }
+}
+
+.testi-card.-dark-blue {
+  background: var(--dark-blue);
+
+  .headshot {
+    border: 0px;
+  }
+
+  .fullname,
+  .verification {
+    color: var(--white);
+  }
+
+  .result {
+    color: var(--grey-200);
+  }
+
+  .beforequote {
+    color: var(--grey-100);
   }
 }
