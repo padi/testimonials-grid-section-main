@@ -17,6 +17,7 @@
   font-style: normal;
 }
 
+/* TODO: Compare to reset.css */
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +93,6 @@ body {
   background: var(--purple-500);
 
   .headshot {
-    border-color: var(--purple-300);
     border: 2px solid var(--purple-300);
   }
 
@@ -129,7 +129,7 @@ body {
   background: var(--dark-blue);
 
   .headshot {
-    border: 0px;
+    border: 2px solid var(--purple-300);
   }
 
   .fullname,
@@ -143,5 +143,59 @@ body {
 
   .beforequote {
     color: var(--grey-100);
+  }
+}
+
+@media (min-width: 48em) {
+  body {
+    padding: 4.625em 3.75em;
+  }
+
+  /* TODO add apostrophe graphic */
+
+  .testi-list {
+    display: grid;
+    grid-template-areas:
+      "daniel   daniel  "
+      "jonathan jeanette"
+      "patrick  patrick "
+      "kira     kira    "
+  }
+
+  .daniel {
+    grid-area: daniel;
+  }
+
+  .jonathan {
+    grid-area: jonathan;
+  }
+
+  .jeanette {
+    grid-area: jeanette;
+  }
+
+  .patrick {
+    grid-area: patrick;
+  }
+
+  .kira {
+    grid-area: kira;
+  }
+}
+
+@media (min-width: 90em) {
+  body {
+    padding: 14.25em 10.25em;
+  }
+
+  /* TODO add apostrophe graphic */
+  /* TODO check typography */
+  /* TODO check white variant font; seems different to mockup */
+
+  .testi-list {
+    display: grid;
+    grid-template:
+      "daniel   daniel  jonathan kira" 1fr
+      "jeanette patrick patrick  kira" 1fr / 1fr 1fr 1fr 1fr;
   }
 }
