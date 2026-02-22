@@ -92,6 +92,7 @@ body {
 .testi-card.-purple {
   background: var(--purple-500);
 
+
   .headshot {
     border: 2px solid var(--purple-300);
   }
@@ -162,6 +163,14 @@ body {
       "kira     kira    "
   }
 
+  /* quotation background */
+  .testi-card.-purple {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 104px 102px;
+    background-position: 69% 0;
+  }
+
   .daniel {
     grid-area: daniel;
   }
@@ -198,4 +207,13 @@ body {
       "daniel   daniel  jonathan kira" 1fr
       "jeanette patrick patrick  kira" 1fr / 1fr 1fr 1fr 1fr;
   }
+
+  /* quotation background */
+  .testi-card.-purple {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 104px 102px;
+    background-position: 86.5% 0;
+  }
+
 }
