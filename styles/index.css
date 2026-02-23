@@ -178,7 +178,7 @@ body {
     background-image: url(../images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-size: 104px 102px;
-    background-position: 69% 0;
+    background-position: left 69% top 0;
   }
 
   .daniel {
@@ -219,6 +219,6 @@ body {
     background-image: url(../images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-size: 104px 102px;
-    background-position: 86.5% 0;
+    background-position: left 86.5% top 0;
   }
 }
