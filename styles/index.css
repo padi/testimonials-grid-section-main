@@ -89,9 +89,21 @@ body {
   }
 }
 
+.testi-card {
+
+  .fullname,
+  .result {
+    color: var(--grey-500);
+  }
+
+  .verification,
+  .beforequote {
+    color: var(--grey-400);
+  }
+}
+
 .testi-card.-purple {
   background: var(--purple-500);
-
 
   .headshot {
     border: 2px solid var(--purple-300);
@@ -152,8 +164,6 @@ body {
     padding: 4.625em 3.75em;
   }
 
-  /* TODO add apostrophe graphic */
-
   .testi-list {
     display: grid;
     grid-template-areas:
@@ -197,10 +207,6 @@ body {
     padding: 14.25em 10.25em;
   }
 
-  /* TODO add apostrophe graphic */
-  /* TODO check typography */
-  /* TODO check white variant font; seems different to mockup */
-
   .testi-list {
     display: grid;
     grid-template:
@@ -215,5 +221,4 @@ body {
     background-size: 104px 102px;
     background-position: 86.5% 0;
   }
-
 }
